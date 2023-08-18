@@ -91,15 +91,7 @@ img {
     border-bottom: 1px solid #ddd;
 }
 
-/* ปุ่ม */
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    cursor: pointer;
-}
+
 
 /* สไตล์เพิ่มลบจำนวนสินค้า */
 .add-itembt,
