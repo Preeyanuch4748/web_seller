@@ -1,0 +1,119 @@
+
+.product-details p {
+    font-size: 5px; /* ขนาดตัวอักษรของข้อมูลสินค้า */
+    overflow: hidden; /* ซ่อนข้อความที่เกินขอบเขต */
+    text-overflow: ellipsis; /* แสดงข้อความที่ตัดด้วย ... หากเกินขอบเขต */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* กำหนดสไตล์ของ container ที่ห่อรูปสไลด์และวีดิโอ */
+.slideshow-container {
+    display: flex; /* ใช้ Flexbox */
+    align-items: left; /* จัดให้รูปสไลด์และวีดิโอตรงกลางแนวนอน */
+    max-width: 40%; /* ปรับขนาดความกว้างของ container */
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+/* กำหนดสไตล์ของรูปสไลด์ */
+.slide {
+    flex: 1; /* ให้รูปสไลด์ขยายตามพื้นที่ที่เหลือใน container */
+    height: auto; /* ปรับความสูงอัตราส่วน */
+    min-width: 40%;
+}
+/* ปรับสไตล์ของรูปภาพในสไลด์ */
+.slide img {
+    width: 40%;
+    height: auto;
+}
+
+/* กำหนดสไตล์ของวีดิโอ */
+video {
+    flex: 1; /* ให้วีดิโอขยายตามพื้นที่ที่เหลือใน container */
+    height: auto; /* ปรับความสูงอัตราส่วน */
+    width: 50%; /* ให้วีดิโอขยายตามความกว้างของ container */
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Style for the search container */
+.search-container {
+    position: absolute;
+    top: 5px;
+    right: -20px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #4d4b4b;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the search input */
+#search-input {
+    border: none;
+    padding: 5px;
+    width: 200px;
+    border-radius: 5px 0 0 5px;
+}
+
+/* Style for the search button */
+#search-button {
+    background-color: #fbdfdf;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* ตะกร้าสินค้า */
+#list-boxs {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.list-name-price {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* ปุ่ม */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* สไตล์เพิ่มลบจำนวนสินค้า */
+.add-itembt,
+.adddelbt {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.bt-left,
+.bt-right {
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+
